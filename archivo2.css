@@ -1,0 +1,116 @@
+body {
+    background-image: url("image/fondomeb.jpg");
+    font-size: 70px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;background-attachment: fixed;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+.foto1 {
+    padding: 0px;
+    margin-top: -43px;
+    margin-left: -64px;
+    margin-right: -67px;
+    float: left;
+    width: 350px;
+    height: 300px;
+}
+
+.tituloCuerpo {
+    color: white;
+    float: right;
+    font-size: 80px;
+    font-family: 'Abyssinica SIL', serif;
+    text-shadow: 5px 0 0 black;
+}
+
+
+.tituloSecundario {
+    color: green;
+    float: right;
+    font-size: 90px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 5px 0 0 black
+}
+
+
+
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    color: white;
+    margin-left: 100px;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #396186;
+    position: static;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+
+.containerlist {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 25px;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+
+
+
+.section {
+    background-color: #396186;
+    background-color:
+}
+
+.footer {
+    background-color: #396186;
+    height: 1em;
+    position:fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1em 0;
+    justify-content: center;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+.box {
+    justify-content: center;
+}
+
+.copy {
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+#Como_llegar:hover {
+    color: aquamarine;
+}
+
+#Laboratorio_e_investigacion:hover {
+    color: aquamarine;
+}
+
+#Visitas:hover {
+    color: aquamarine;
+}
+
+#Quienes_somos:hover {
+    color: aquamarine;
+}
