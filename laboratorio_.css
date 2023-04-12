@@ -20,22 +20,24 @@ body {
     height: 300px;
 }
 
-.tituloCuerpo {
-    color: white;
-    float: right;
-    font-size: 80px;
-    font-family: 'Abyssinica SIL', serif;
-    text-shadow: 5px 0 0 black;
-}
+
+.container{width: 100%;
+margin: 0 auto;}
+img{width: 400px;}
+section article{transition: box-shadow 0.3s ease;  background-color: white;margin: 1rem 0;border-radius: 00.5rem;
+padding: 0.25rem 0;font-size: 20px;}
+
+h2{color:black;
+    font-size: 44px;
+    font-family: 'Abyssinica SIL', serif;}
 
 
-.tituloSecundario {
-    color: green;
-    float: right;
-    font-size: 90px;
-    font-family: 'Pacifico', cursive;
-    text-shadow: 5px 0 0 black
-}
+
+
+
+
+
+
 
 
 
@@ -142,4 +144,3 @@ li {
 #Quienes_somos:hover {
     color: aquamarine;
 }
-
