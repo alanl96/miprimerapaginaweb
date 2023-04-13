@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>laboratorio_e_investigacion</title>
+    <title>Visitas</title>
+    
+    <script src="visitas.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="archivo2.css">
-    
-    <link rel="stylesheet" href="laboratorio_.css">
-
+    <link rel="stylesheet" href="visitas.css">
 </head>
-
-
 
 <body>
     <header>
@@ -38,24 +40,45 @@
         </nav>
     </header>
 
-<section class="container">
-    <article class="post">
-        <h2>Área Laboratorio e Investigación-Museo Paleontológico "Ernesto Bachmann" </h2>
-        <p>-Cuando se encuentra el fósil, se hace la extracción de campo y eso se saca con un colchón de yeso. No es que sacamos los huesos limpios, sino que con toda la porción de roca y todo eso cubierto con yeso porque es la forma más rápida de hacerlo. Luego eso se lleva al laboratorio y se saca la tapa de yeso y eso se va preparando con pinceles y puntitas. Es un trabajo artesanal realizado por los técnicos paleontológicos y es lo que más tiempo lleva porque se separa toda la roca alrededor del hueso.­
+    <h1 class="titulo">Visitas</h1>
+    <p id="parrafo"> Para reservar un recorrido con un guía es necesario que complete con la siguiente información: </p>
 
-            Ahí es donde nosotros los paleontólogos hacemos el estudio, se describe el material y se compara con especies relacionadas y, a partir de eso, se analiza si es una especie conocida o nueva. Se le da un nombre y todos los estudios de parentescos que se puedan determinar de esos huesos. Eso se manda a publicar a una revista científica. Es importante publicarlo porque sino no existe en ciencia. La única forma de darle entidad a ese hallazgo es publicarlo en una revista científica, donde envían el informe con las fotos a otros paleontólogos en el mundo para que lo revisen. Una vez que sale la publicación ese es el nombre que se le da si es una especie nueva. Cuando ustedes ven que se presenta una nueva especie de dinosaurio, en realidad eso se encontró varios años antes. Hay todo un trabajo previo que lleva tiempo y generalmente en el rango de los años de trabajo. Desde que se encuentra, se extrae, se limpia, se estudia y se publica todo ese proceso puede llevar de 4 a 10 años.­</p>
-        <img src="image/areameb.jpg" alt="areameblogo">
 
-    </article>
+    <div id="wizard">
+     <div id="containerpasos">
+        <div id="paso1" class="step">
+          <h2 class="paso">Ingrese su nombre:</h2>
+          <input type="text" id="name-input">
+          <button onclick="nextStep()">Siguiente</button>
+        </div>
+        <div id="paso2" class="step">
+          <h2 class="paso">Ingrese su correo electrónico:</h2>
+          <input type="email" id="email-input">
+          <button onclick="nextStep()">Siguiente</button>
+        </div>
+
+        <div id="turno" class="step">
+            <h2 class="paso">Seleccione un turno:</h2>
+            <select id="turno-select">
+              <option value="mañana">Mañana</option>
+              <option value="tarde">Tarde</option>
+            </select>
+            <button onclick="showAllData()">Enviar</button>
+          </div>
+     </div> 
+
+        <div id="paso3" class="step">
+          <h2 id="listo">¡Listo!</h2>
+          <p id="finform">
+            -Su nombre es: <span id="name-output"></span>
+            -Su correo electrónico es: <span id="email-output"></span> 
+            -Su turno seleccionado es: <span id="turno-output"><span>.
+           <button id="export-pdf">Exportar a PDF</button>
+          </p>
+
+        </div>
+      </div>
     
-</section>
-
-
-
-
-
-
-
 
     <footer>
         <div class="footer-container"> 
@@ -68,7 +91,7 @@
          <div class="soporte">
             <h3>Soporte:</h3>
             <ul>
-                <li><button type="button"><a href="ayuda.html">Ayuda</a></button>
+              <li><button type="button"><a href="ayuda.html">Ayuda</a></button>
                 </li>
             </ul>
         </div>
@@ -84,10 +107,6 @@
     
         </div>
     </footer>
-
-</body>
-
-
-
-
-</html>
+    </body>
+    
+    </html>
